@@ -1,0 +1,60 @@
+p {font-family:Georgia, serif;
+font-size:20px; color:black;}
+p1 {color:blue;
+   font-size:40px;}
+#mystory{
+  background:content-box radial-gradient(crimson, skyblue);
+}
+#home {
+  background:content-box radial-gradient(crimson, skyblue);
+}
+ body {
+      background: content-box radial-gradient(crimson, skyblue);
+       }
+p{columns: 3;
+column-span: all;}
+  h1
+  { font-size:50px; text-align:center; color:reddish;}
+  75% {
+  font-size: 300%;
+  margin-left: 25%;
+  width: 150%;
+}
+p1 {
+  animation-duration: 6s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  85% {
+    font-size: 300%;
+    margin-right: 35%;
+    width: 150%;
+  }
+
+  to {
+    margin-right: 100%;
+    width: 100%;
+  }
+}
+  h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
