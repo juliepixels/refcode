@@ -8,6 +8,9 @@ p1 {color:blue;
 #home {
   background:content-box radial-gradient(crimson, skyblue);
 }
+.header{  background:content-box radial-gradient(crimson, skyblue);
+
+}
  body {
       background: content-box radial-gradient(crimson, skyblue);
        }
