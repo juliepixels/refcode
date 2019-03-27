@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  background-image: url("pic6.jpg");
 }
 
 /* Style the header */
@@ -18,6 +19,7 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
+  background-image: url("pic6.jpg");
 }
 
 /* Style the top navigation bar */
@@ -38,16 +40,15 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color:content-box radial-gradient(crimson, skyblue);
+  background-color: skyblue;
   color:lightcyan;
 }
-body  {
-    background:content-box radial-gradient(crimson, skyblue);
-  }
 h1 {
   color:brown; font-size:50px; text-align: center;
 }
- 
+body{
+background-image: url("pic6.jpg");
+}
 table,
 td {
     border: 10px solid rgb(26, 2, 71); table-layout: auto
@@ -88,6 +89,28 @@ table.center
   .flex{
     display:flex;
   }
+  #teams {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#teams td, #teas th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#teams tr:nth-child(even){background-color: #f2f2f2;}
+
+#teams tr:hover {background-color: rgb(230, 111, 210);}
+
+#teams th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
 </style>
 <body>
     <div class="header">
@@ -102,7 +125,7 @@ table.center
       <a href="./Contact.html">Contact</a>
     </div>
 <div class="flex">
-<table class="center">
+<table class="center"; id="teams">
   <thead>
       <tr>
           <th colspan="5">LINKS</th>
@@ -206,8 +229,8 @@ table.center
 </ul>
 </div>
 <div>
-    <span><a href="https://github.com/UmmuAyyub">GitHub</a></span><br>
-    <span><a href="https://www.linkedin.com/in/nezira-usmael-6358b3182/">linkedin</a></span>
+    <span><a href="https://github.com/UmmuAyyub" style="color:yellowgreen">GitHub</a></span><br>
+    <span><a href="https://www.linkedin.com/in/nezira-usmael-6358b3182/" style="color:yellowgreen">linkedin</a></span>
     </div>
 <section></section><br><br>
 

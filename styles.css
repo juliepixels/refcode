@@ -1,19 +1,16 @@
-p {font-family:Georgia, serif;
-font-size:20px; color:black;}
+p {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size:20px; color:reddish;}
 p1 {color:blue;
    font-size:40px;}
-#mystory{
-  background:content-box radial-gradient(crimson, skyblue);
-}
 #home {
   background:content-box radial-gradient(crimson, skyblue);
 }
-.header{  background:content-box radial-gradient(crimson, skyblue);
+.header{  background:content-box radial-gradient(rgb(31, 30, 30), skyblue);
 
 }
- body {
-      background: content-box radial-gradient(crimson, skyblue);
-       }
+  body{
+    background-image:url("canada.jpg");
+    }       
 p{columns: 3;
 column-span: all;}
   h1

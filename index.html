@@ -39,17 +39,26 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(110, 78, 184);
   color:lightcyan;
 }
 body{
   background-image:url("toronto5.jpg");
 }
+.logo{
+  float:right;
+  width:350px;
+}
 </style>
 </head>
 <body>
+     
 <div class="header">
-  <h1>WELCOME TO MY FIRST WEBISTE!</h1>
+    <img src="welcome.gif" width="300px" alt="welcome logo">
+    <div class="logo">
+        <img src="logo.gif"> 
+     </div>
+  <h1>to MY FIRST WEBISTE!</h1>
 </div>
 
 <div class="topnav">
@@ -67,7 +76,7 @@ body{
       h1{
         background:content-box radial-gradient(rgb(53, 49, 50), skyblue);
       }
-      img{
+      .img{
         float:right; width:150px;
       }
       .one{
@@ -85,6 +94,11 @@ body{
         font-size: 20px;
         
       }
+    .logo{
+      float:left; 
+      width:150px;
+    }
+
       footer {
     display: flex;
     justify-content: center;
@@ -99,7 +113,7 @@ body{
     </style>
 <body> 
     <p1>My first coding class website!</p1><br><br>
-        <img src="NEDU.jpg" alt="Portrait of NEZIRA">
+        <img src="NEDU.jpg" alt="Portrait of NEZIRA" class="img">
         <div class="one">
         <p2><em>"This worldly life is like a shadow. if you try to catch it, you will never be able to do so. if you turn your back towards it, it has no choise but to follow you!."</em></p2><br><br>
         </div>
@@ -117,6 +131,11 @@ body{
               <span><a href="https://github.com/UmmuAyyub" id="change">GitHub</a></span><br>
               <span><a href="https://www.linkedin.com/in/nezira-usmael-6358b3182/" id="change">linkedin</a></span>
               </div>
+              <button type="button" 
+              onclick="document.getElementById('demo').innerHTML = Date()">
+              Today's Date and Time.</button>
+
+<p id="demo"></p>
 
 <section></section><br><br>
 
