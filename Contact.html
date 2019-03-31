@@ -69,6 +69,12 @@ h2{
 font-size: 40px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+#contact{
+  margin:auto;
+  width:auto;
+  border-block-start-color: cornflowerblue;
+  border-block-end-color: aqua;
+}
 </style>
 </head>
 <body>
@@ -90,13 +96,11 @@ font-size: 40px;
   </div>
 <body>
  
-<h2> I can be contacted via</h2>   
-<div>
-<a href=" mailto: nedu.amin@gmail.com" target="_blank"> <img src="gmail1.png" alt="gmail" style="width:100px;;border:0;;float:right;"> </a>
-
-<form action="https://formspree.io/address@email.tld" method="POST"/>
+<h2> I can be contacted via</h2>  
+<div> 
+<form action="https://formspree.io/address@email.tld" method="POST" id="contact">
   <fieldset>
-    <legend>Personal information:</legend>
+    <legend id="contact"><b>Personal information</b>:</legend>
     First name:<br>
     <input type="text" name="firstname" placeholder="First name">
     <br>
@@ -109,12 +113,15 @@ font-size: 40px;
     Phone Number:<br>
     <input type="text" id="Phone" name="Phone" placeholder="(optional)...">
     <br><br>
-    <textarea id="subject" name="subject" placeholder="Write your message..."></textarea>
-    <input type="submit" value="Submit">
+    <textarea id="subject" name="subject" placeholder="Write your message..."></textarea><br>
+    <input type="submit" value="Submit" style="background-color:lightseagreen;; width:130px;">
   </fieldset>
 </form>
-    <a href="https://github.com/UmmuAyyub" target="_blank"> <img src="git1.png" alt="github" style="width:100px;;border:0;;float:center;"></a>
-      <a href="https://www.linkedin.com/in/nezira-usmael-6358b3182" target="_blank"> <img src="link1.png" alt="linkedin" style="width:100px;;border:0;;float:left;"></a>
+</div>
+<div>
+  <a href=" mailto: nedu.amin@gmail.com" target="_blank"> <img src="gmail1.png" alt="gmail" style="width:100px;;border:0;"> </a>  
+    <a href="https://github.com/UmmuAyyub" target="_blank"> <img src="git1.png" alt="github" style="width:100px;;border:0;"></a>
+      <a href="https://www.linkedin.com/in/nezira-usmael-6358b3182" target="_blank"> <img src="link1.png" alt="linkedin" style="width:100px;;border:0;"></a>
           
             </div>
             <div class="button">
