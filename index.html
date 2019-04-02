@@ -1,406 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<link rel="stylesheet" href="styles.css">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: rgb(110, 78, 184);
-  color:lightcyan;
-}
-.logo{
-  float:right;
-  width:50px;
-}
-body {
-  background-image:url("nature1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-	color: #333;
-	font: 100% Lato, Arial, Sans Serif;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-}
-
-#background-wrap {
-    bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: -1;
-}
-
-/* KEYFRAMES */
-
-@-webkit-keyframes animateBubble {
-    0% {
-        margin-top: 1000px;
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #mySidenav a {
+      position: absolute;
+      left: -80px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 100px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
     }
-    100% {
-        margin-top: -100%;
+    #mySidenav a:hover {
+      left: 0;
     }
-}
-
-@-moz-keyframes animateBubble {
-    0% {
-        margin-top: 1000px;
+    #Home {
+      top: 50px;
+      background-color: #4CAF50;
     }
-    100% {
-        margin-top: -100%;
+    #mystory {
+      top: 100px;
+      background-color: #2196F3;
     }
-}
 
-@keyframes animateBubble {
-    0% {
-        margin-top: 1000px;
+    #about {
+      top: 150px;
+      background-color: #f44336;
     }
-    100% {
-        margin-top: -100%;
+
+    #resume {
+      top: 200px;
+      background-color: rgb(18, 212, 203);
     }
-}
 
-@-webkit-keyframes sideWays { 
-    0% { 
-        margin-left:0px;
+    #links {
+      top: 250px;
+      background-color: red;
     }
-    100% { 
-        margin-left:50px;
+
+    #contact {
+      top: 300px;
+      background-color: rgb(77, 221, 58);
     }
-}
-
-@-moz-keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
-}
-
-@keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
-}
-
-/* ANIMATIONS */
-
-.x1 {
-    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: -5%;
-	top: 5%;
-	
-	-webkit-transform: scale(0.6);
-	-moz-transform: scale(0.6);
-	transform: scale(0.6);
-}
-
-.x2 {
-    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	
-	left: 5%;
-	top: 80%;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
-	transform: scale(0.4);
-}
-
-.x3 {
-    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 10%;
-	top: 40%;
-	
-	-webkit-transform: scale(0.7);
-	-moz-transform: scale(0.7);
-	transform: scale(0.7);
-}
-
-.x4 {
-    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	
-	left: 20%;
-	top: 0;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-.x5 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	
-	left: 30%;
-	top: 50%;
-	
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	transform: scale(0.5);
-}
-
-.x6 {
-    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 50%;
-	top: 0;
-	
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-}
-
-.x7 {
-    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 65%;
-	top: 70%;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
-	transform: scale(0.4);
-}
-
-.x8 {
-    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	
-	left: 80%;
-	top: 10%;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-.x9 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	
-	left: 90%;
-	top: 50%;
-	
-	-webkit-transform: scale(0.6);
-	-moz-transform: scale(0.6);
-	transform: scale(0.6);
-}
-
-.x10 {
-    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 80%;
-	top: 80%;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-/* OBJECTS */
-
-.bubble {
-    -webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	
-    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	
-    height: 200px;
-	position: absolute;
-	width: 200px;
-}
-
-.bubble:after {
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	
-    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	
-	content: "";
-    height: 180px;
-	left: 10px;
-	position: absolute;
-	width: 180px;
-}
-</style>
+  </style>
 </head>
+
 <body>
-     
-<div class="header">
-     </div>
-  <h1><img src="welcome.gif" alt="welcome logo" width="250px">to my first Coding website!</h1>
-</div>
+  <div id="mySidenav" class="sidenav">
+    <a href="./index.html" id="Home">Home*</a>
+    <a href="./mystory.html" id="mystory">Developer Story</a>
+    <a href="./About.html" id="about">About</a>
+    <a href="./Resume.html" id="resume">Resume</a>
+    <a href="./teams.html" id="links">Links</a>
+    <a href="./Contact.html" id="contact">Contact</a>
+  </div>
+  <div style="margin-left:50px;">
+    <h1><img src="welcome-birds.gif" alt="welcome logo" width="250px" float="left" ;>to my Website!</h1>
+  </div>
+  <div id="background-wrap">
+    <div class="bubble x1"></div>
+    <div class="bubble x2"></div>
+    <div class="bubble x3"></div>
+    <div class="bubble x4"></div>
+    <div class="bubble x5"></div>
+    <div class="bubble x6"></div>
+    <div class="bubble x7"></div>
+    <div class="bubble x8"></div>
+    <div class="bubble x9"></div>
+    <div class="bubble x10"></div>
+  </div>
+  <div calss="speech-bubble"></div>
+  <h2 style="background:content-box radial-gradient(rgb(31, 30, 30), skyblue);;
+    color:rgb(102, 255, 0);">This is my Fist ever created website by me!</h2>
+  <img src="NEDU.jpg" alt="Portrait of NEZIRA" class="img">
+  <p class="one"><em>"This worldly life is like a shadow. if you try to catch it, you will never be able to do so. if
+      you turn your back towards it, it has no choise but to follow you!."</em></p><br>
+  <p class="two"><em>"A real man is one who fears the death of his heart, not of his body."</em></p><br>
+  <p class="three"><em>"There are six stages to knowledge: Firstly: Asking questions in a good manner. Secondly:
+      Remaining quiet and listening attentively. Thirdly: Understanding well. Fourthly: Memorising. Fifthly: Teaching.
+      Sixthly- and it is its fruit: Acting upon the knowledge and keeping to its limits.
+    </em></p><br>
+  by...<i style="color:white";>Ibn Qayyim Al-Jawziyya</i>
+  </div>
+  <div>
+    <span><a href="https://github.com/UmmuAyyub" target="_blank" id="change">GitHub</a></span><br>
+    <span><a href="https://www.linkedin.com/in/nezira-usmael-6358b3182/" target="_blank" id="change">linkedin</a></span>
+  </div>
+  <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    Today's Date and Time.</button>
 
-<div class="topnav">
-  <a href="./index.html">Home*</a>
-  <a href="./mystory.html">Developer Story</a>
-  <a href="./About.html">About</a>
-  <a href="./Resume.html">Resume</a>
-  <a href="./teams.html">Links</a>
-  <a href="./Contact.html">Contact</a>
+  <p id="demo"></p>
+  <section></section><br><br>
 
-  
-</div>
-</head>
-<style media="screen">
-      h1{
-        background:content-box radial-gradient(rgb(196, 44, 82), skyblue);
-      }
-      .img{
-        float:right; width:150px;
-      }
-      .one{
-        color:greenyellow;
-        font-size: 20px;
-        
-      }
-      .two{
-         color:greenyellow;
-          font-size: 20px;
-          
-      }
-      .three{
-        color:greenyellow;
-        font-size: 20px;
-        
-      }
-    .logo{
-      float:left; 
-      width:150px;
-    }
+  <footer>
 
-      footer {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    background-color: #45a1ff;
-    color: #fff;
-}
-#change{
-  color:cyan;
-  font-size: 25px;
-}
-    </style>
-<body> <br><br>
-
-    <div id="background-wrap">
-        <div class="bubble x1"></div>
-        <div class="bubble x2"></div>
-        <div class="bubble x3"></div>
-        <div class="bubble x4"></div>
-        <div class="bubble x5"></div>
-        <div class="bubble x6"></div>
-        <div class="bubble x7"></div>
-        <div class="bubble x8"></div>
-        <div class="bubble x9"></div>
-        <div class="bubble x10"></div>
-    </div>
-        <img src="NEDU.jpg" alt="Portrait of NEZIRA" class="img">
-        <div class="one">
-        <p2><em>"This worldly life is like a shadow. if you try to catch it, you will never be able to do so. if you turn your back towards it, it has no choise but to follow you!."</em></p2><br><br>
-        </div>
-      <div class="two">
-        <p3><em>"A real man is one who fears the death of his heart, not of his body."</em></p3><br><br>
-      </div>
-      <div class="three">
-       <p4><em>"There are six stages to knowledge: Firstly: Asking questions in a good manner. Secondly: Remaining quiet and listening attentively. Thirdly: Understanding well. Fourthly: Memorising. Fifthly: Teaching. Sixthly- and it is its fruit: Acting upon the knowledge and keeping to its limits.
-       </em1  z
-       ></p4><br>
-          </div>
-           by...<i>Ibn Qayyim Al-Jawziyya</i>
-
-           <div>
-              <span><a href="https://github.com/UmmuAyyub" target="_blank" id="change">GitHub</a></span><br>
-              <span><a href="https://www.linkedin.com/in/nezira-usmael-6358b3182/" target="_blank" id="change">linkedin</a></span>
-              </div>
-              <button type="button" 
-              onclick="document.getElementById('demo').innerHTML = Date()">
-              Today's Date and Time.</button>
-
-<p id="demo"></p>
-
-<section></section><br><br>
-
-<footer>
-
-  ©2019_Nezira Usmael
-</footer>
+    ©2019_Nezira Usmael
+  </footer>
 
 </body>
-
-
 </html>
-
