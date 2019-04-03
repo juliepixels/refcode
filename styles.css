@@ -1,36 +1,21 @@
-
+p {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size:20px; color:reddish;}
 p1 {color:blue;
    font-size:40px;}
 #home {
   background:content-box radial-gradient(crimson, skyblue);
 }
 .header{  background:content-box radial-gradient(rgb(31, 30, 30), skyblue);
-h1{
-   font-size:40px; 
+
+}
+      
+  h1{ 
+  font-size:40px; 
   text-align:center; 
   color:blue;
   background:content-box radial-gradient(rgb(31, 30, 30), skyblue);
 }
-h2 {
-    animation-name: diagonal-slide;
-    animation-duration: 5s;
-    animation-iteration-count: 10;
-  }
-  
-  @keyframes diagonal-slide {
-  
-    from {
-      left: 0;
-      top: 0;
-    }
-  
-    to {
-      left: 100px;
-      top: 100px;
-    }
-  
-  }
-  h1{
+  h1 {
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -119,7 +104,7 @@ h2 {
     width:50px;
   }
   body {
-    background-image:url("coverss.jpg");
+    background-image:url("cover1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   
@@ -368,23 +353,23 @@ h2 {
     width: 180px;
   }
       h1{
-        background:content-box radial-gradient(rgb(196, 44, 82), skyblue);
+        background:content-box radial-gradient(rgb(181, 196, 44), rgb(148, 48, 214));
       }
       .img{
         float:right; width:150px;
       }
       .one{
-        color:greenyellow;
+        color:yellowgreen;
         font-size: 20px;
         
       }
       .two{
-         color:greenyellow;
+         color:yellowgreen;
           font-size: 20px;
           
       }
       .three{
-        color:greenyellow;
+        color:yellowgreen;
         font-size: 20px;
         
       }
@@ -443,3 +428,4 @@ p1 {
 	border-left: 0;
 	margin-left: -10px;
   margin-bottom: -20px;
+}

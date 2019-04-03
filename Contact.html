@@ -19,7 +19,7 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
-  background-image: url("pic2.jpg");
+  background-image: url("cover8.jpg");
 }
 
 /* Style the top navigation bar */
@@ -44,8 +44,8 @@ body {
   color:lightcyan;
 }
 #gif{
-  float:center;
-  width:300px;
+  float:left;
+  width:200px;
   border:0;
 }
 .button{
@@ -57,12 +57,13 @@ body {
         width:200px;
       }
 body{
-  background-image: url("pic9.jpg");
+  background-image: url("cover1.jpg");
   text-align: center;
 }
 h1{
-  color:orangered;
+  color:blue;
   font-family: cursive;
+  background:content-box radial-gradient(rgb(181, 196, 44), rgb(148, 48, 214));
 }
 h2{
   color:orangered;
@@ -75,6 +76,48 @@ font-size: 40px;
   border-block-start-color: cornflowerblue;
   border-block-end-color: aqua;
 }
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 </style>
 </head>
 <body>
@@ -126,10 +169,13 @@ font-size: 40px;
             </div>
             <div class="button">
               <p>Did you like my website?</p>
-            <button id="Yes" type="button" name="button" onclick="alert('You are Awesome!.')"> Yes</button> 
-<button id="No" name="button" onclick="alert('Thank you! but why? :(')"> No</button>
+            <button id="Yes" type="button" name="button" onclick="alert('You are Awesome! add me to your favorites.')"> Yes</button> 
+<button id="No" name="button" onclick="alert('but why?! :(')"> No</button>
 </div>
-
+<button class="favorite styled"
+        type="button">
+    Add to favorites
+</button>
 <section></section><br><br>
 
 <footer>
