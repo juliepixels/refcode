@@ -47,7 +47,7 @@ width: 150%;
 }
 body {
   margin:0;
-  background:url("cover1.jpg") no-repeat center center fixed;
+  background:url("cover15.png") no-repeat center center fixed;
   background-size: cover; 
 
   color: #333;
@@ -106,7 +106,9 @@ body {
 color:cyan;
 font-size: 20px;
 }
-.slide {
+.slide { color:white;
+  font-size: 3em;
+  
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -188,14 +190,17 @@ to {
    margin-bottom: 20px;
  }
  .nav-title{
-   color:white;
+   color:black;
+   font-size: 30px;
    width:100px;
    padding-top: 10px;
  }
  .text-container{
    margin:10%;
-   padding:40px;
-   background-color: rgba(255, 255, 255, .8);
+   padding:30px;
+   color:whitesmoke;
+   background-color: rgba(15, 15, 15, 0.5);
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
  }
  .page-title{
    font-size:25px;
