@@ -73,13 +73,6 @@ to {
   width: 100%;
 }
 
-}
-
-p1 {
-  color: blue;
-  font-size: 40px;
-}
-
 #home {
   background: content-box radial-gradient(crimson, skyblue);
 }
@@ -92,10 +85,7 @@ h1 {
   font-size: 40px;
   text-align: center;
   color: blue;
-  background: content-box radial-gradient(rgb(31, 30, 30), skyblue);
-}
-
-h1 {
+  background: content-box radial-gradient(rgb(31, 30, 30 .4), skyblue);
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -116,12 +106,6 @@ h1 {
 to {
   margin-left: 0%;
   width: 100%;
-}
-
-}
-
-* {
-  box-sizing: border-box;
 }
 
 }
@@ -150,10 +134,6 @@ body {
   right: 0;
   top: 0;
   z-index: -1;
-}
-
-h1 {
-  background: content-box radial-gradient(rgb(181, 196, 44), rgb(148, 48, 214));
 }
 
 .img {
@@ -283,17 +263,10 @@ to {
   align-items: flex-end;
 }
 
-.author-name {
-  color: white;
-  flex: 2;
-  margin-bottom: 20px;
-}
-
 .nav-title {
   color: black;
   font-size: 30px;
   width: 100px;
-  padding-top: 10px;
 }
 
 .text-container {
@@ -325,17 +298,6 @@ h1 {
   }
 }
 
-h1 {
-  background: content-box radial-gradient(rgb(196, 44, 138), skyblue);
-}
-
-h1 {
-  color: brown;
-  font-size: 50px;
-  text-align: center;
-  background: content-box radial-gradient(rgb(181, 196, 44), rgb(148, 48, 214));
-}
-
 table, td {
   border: 10px solid rgb(26, 2, 71);
   table-layout: auto
@@ -345,30 +307,6 @@ thead, tfoot {
   background-color: rgb(36, 2, 2);
   color: rgb(91, 214, 19);
   text-shadow: 0vmax;
-}
-
-h1 {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-}
-
-h1 {
-  color: rgb(42, 85, 165);
-  font-size: 50px;
-  background-color: content-box radial-gradient(crimson, skyblue);
 }
 
 .color {
@@ -413,18 +351,9 @@ table.center {
   color: white;
 }
 
-.header {
-  background-image: url("cover9.jpg");
-}
-
-body {
-  background-image: url("cover1.jpg");
-  background-size: cover;
-}
-
 .center {
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   background-color: cornflowerblue;
 }
 
@@ -442,17 +371,6 @@ body {
 .thx {
   float: right;
   width: 200px;
-}
-
-body {
-  background-image: url("cover1.jpg");
-  text-align: center;
-}
-
-h1 {
-  color: blue;
-  font-family: cursive;
-  background: content-box radial-gradient(rgb(181, 196, 44), rgb(148, 48, 214));
 }
 
 h2 {
@@ -488,22 +406,6 @@ h2 {
 
 .styled:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-h1 {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }
 
 .element {
