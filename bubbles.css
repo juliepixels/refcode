@@ -37,45 +37,6 @@
   position: absolute;
   width: 180px;
 }
-  h1{
-    background:content-box radial-gradient(rgb(181, 196, 44), rgb(148, 48, 214));
-  }
-  .img{
-    float:right;
-    border-radius: 25px;
-    border: 2px solid gray;
-  }
-  .one{
-    color:whitesmoke;
-    font-size: 10px;
-    
-  }
-  .two{
-      color:whitesmoke;
-      font-size: 10px;
-      
-  }
-  .three{
-    color:whitesmoke;
-    font-size: 10px;
-    
-  }
-.logo{
-  float:left; 
-  width:150px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  background-color: #db2964;
-  color: #fff;
-}
-#change{
-  color:cyan;
-  font-size: 25px;
-}
 p1 {
   animation-duration: 3s;
   animation-name: slidein;
@@ -95,29 +56,6 @@ to {
   margin-left: 0%;
   width: 100%;
 }
-.speech-bubble {
-  position:relative;
-  width:270px;
-  padding:1px 92px;
-  margin:1em auto 80px;
-  text-align:center;
-  color:#fff;
-  background:#075698;
-  /* css3 */
-  background:-webkit-gradient(linear, 0 0, 0 100%, from(#2e88c4), to(#075698));
-  background:-moz-linear-gradient(#2e88c4, #075698);
-  background:-o-linear-gradient(#2e88c4, #075698);
-  background:linear-gradient(#2e88c4, #075698);
-  
-  -webkit-border-top-left-radius:220px 120px;
-  -webkit-border-top-right-radius:220px 120px;
-  -webkit-border-bottom-right-radius:220px 120px;
-  -webkit-border-bottom-left-radius:220px 120px;
-  -moz-border-radius:220px / 120px;
-  border-radius:220px / 120px;
-}
-  
-  .speech-bubble p {font-size:14px;}
   
 
 /* KEYFRAMES */
