@@ -4,7 +4,8 @@ p {
   color: white;
 }
 
-#mySidenav a {
+#mySidenav a,
+.nav-title { /* NOTES: By adding a , and the selector .nav-title to this rule means they will share styles, and appear like the other <a> tags in the menu. */
   position: absolute;
   left: -120px;
   transition: 0.3s;
@@ -14,6 +15,14 @@ p {
   font-size: 20px;
   color: white;
   border-radius: 0 5px 5px 0;
+}
+
+/* NOTES: I moved the rule for .nav-title closer to the other nav rules to make it easier to find. */
+.nav-title {
+  color: black;
+  font-size: 30px;
+  left: -10px;
+  top: 0;
 }
 
 #mySidenav a:hover {
@@ -50,44 +59,20 @@ p {
   background-color: rgb(77, 221, 58);
 }
 
-h2 {
-  animation-duration: 6s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-}
-
-75% {
-  font-size: 300%;
-  margin-left: 25%;
-  width: 150%;
-}
-
-to {
-  margin-left: 0%;
-  width: 100%;
-}
-
-#home {
-  background: content-box radial-gradient(crimson, skyblue);
-}
-
 .header {
   background: content-box radial-gradient(rgb(31, 30, 30), skyblue);
+  display:flex;
+  justify-content:space-between;
 }
 
-h1 {
+h1 { /* NOTES: There were two rules applied to the h1 selector. I combined them and removed the extra animation rule for the slidein keyframe. Once a keyframe animation rule is created, you can use it multipule times in the same style sheet. That way you have less code to maintain. */
   font-size: 40px;
   text-align: center;
   color: blue;
   background: content-box radial-gradient(rgb(31, 30, 30 .4), skyblue);
   animation-duration: 3s;
-  animation-name: slidein;
+  animation-name: slidein; /* NOTES: This will use the keyframe rule on line 82 */
+  padding-left: 40px;
 }
 
 @keyframes slidein {
@@ -95,19 +80,15 @@ h1 {
     margin-left: 100%;
     width: 300%;
   }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
-75% {
-  font-size: 300%;
-  margin-left: 25%;
-  width: 150%;
-}
-
-to {
-  margin-left: 0%;
-  width: 100%;
-}
-
+h2 {
+  animation-duration: 6s;
+  animation-name: slidein; /* NOTES: This will use the keyframe rule on line 82 */
 }
 
 .logo {
@@ -116,13 +97,12 @@ to {
 }
 
 body {
-  margin: 0;
   background: url("./img/cover15.png") no-repeat center center fixed;
   background-size: cover;
   color: #333;
   font: 100% Lato, Arial, Sans Serif;
   height: 100vh;
-  margin: 0;
+  margin: 0 0 0 100px; /* NOTES: I've added a margin to left of the whole page to allow for the width of the navigation. This makes is easier to position all the other elements on the page. */
   padding: 0;
   overflow-x: hidden;
 }
@@ -180,25 +160,7 @@ footer {
   color: white;
   font-size: 3em;
   animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-}
-
-75% {
-  font-size: 300%;
-  margin-left: 25%;
-  width: 150%;
-}
-
-to {
-  margin-left: 0%;
-  width: 100%;
+  animation-name: slidein; /* NOTES: This will use the keyframe rule on line 82 */
 }
 
 .speech-bubble {
@@ -214,12 +176,7 @@ to {
   background: -moz-linear-gradient(#2e88c4, #075698);
   background: -o-linear-gradient(#2e88c4, #075698);
   background: linear-gradient(#2e88c4, #075698);
-  -webkit-border-top-left-radius: 220px 120px;
-  -webkit-border-top-right-radius: 220px 120px;
-  -webkit-border-bottom-right-radius: 220px 120px;
-  -webkit-border-bottom-left-radius: 220px 120px;
-  -moz-border-radius: 220px / 120px;
-  border-radius: 220px / 120px;
+  border-radius: 220px / 120px; /* Note: The -webkit- prefex isn't needed for border-radius anymore. Other CSS properties do still need it though. You can find out which ones still need prefixes at caniuse.com */
 }
 
 .speech-bubble p {
@@ -227,7 +184,6 @@ to {
 }
 
 /* creates the larger circle */
-
 .speech-bubble:before {
   content: "";
   position: absolute;
@@ -243,7 +199,6 @@ to {
 }
 
 /* creates the smaller circle */
-
 .speech-bubble:after {
   content: "";
   position: absolute;
@@ -263,12 +218,6 @@ to {
   align-items: flex-end;
 }
 
-.nav-title {
-  color: black;
-  font-size: 30px;
-  width: 100px;
-}
-
 .text-container {
   margin: 10%;
   padding: 30px;
@@ -280,22 +229,6 @@ to {
 .page-title {
   font-size: 25px;
   color: white;
-}
-
-h1 {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }
 
 table, td {
@@ -324,7 +257,7 @@ table.center {
   display: flex;
 }
 
-#teams {
+#teams { /* NOTES: Try to use classes instead of id when possible. You can have many classes on the same element. */
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -408,7 +341,17 @@ h2 {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
+/* FORM ELEMENTS */
 .element {
   color: aqua;
   font-size: large;
+  padding: 20px; /* NOTES: Padding is always a good idea when framing content inside a box. */
+}
+
+label {
+  display: block;
+}
+
+fieldset { /* NOTES: Added this to remove the borders on all fieldsets. */
+  border: none;
 }
