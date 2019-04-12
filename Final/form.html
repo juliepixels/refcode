@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>My Story</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+.container {
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 100px;
+ box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    font-family: Times New Roman;
+    margin-block-end: 1em;
+    display: block;
+    margin-top: 0em;
+}
+
+input[type=text], select, textarea, input[type=tel]
+{    width: 35%;
+    padding: 9px;
+    border: 1px solid pink;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-shadow: 5px 8px palevioletred;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;-
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+</style>
+<body> 
+<div class="container">
+<form method="POST" action="https://formspree.io/nedu.amin@gmail.com">
+
+        <label for="fname">First Name</label> <br>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..."><br>
+
+        <label for="lname">Last Name</label> <br>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..."> <br>
+
+        <label for="Email">Email</label> <br>
+        <input type="text" id="Email" name="_replyto" placeholder="Your email adress..."><br>
+
+        <label for="PN">Phone Number (optional)</label> <br>
+        <select id="PN" name="PN">
+          <option value="home phone">Home</option>
+          <option value="cell phone">Cell</option>
+        </select> <br>
+        <input type="tel" id="PN" name="Phone Number" placeholder="Your number..."><br>
+
+        <label for="country">Country</label> <br>
+        <select id="country" name="country">
+          <option value="africa">Africa</option>
+          <option value="australia">Australia</option>
+          <option value="asia">Asia</option>
+          <option value="canada">Canada</option>
+          <option value="europe">Europe</option>
+          <option value="usa">USA</option>
+        </select> <br>
+        <br>
+        <label for="subject">Comment</label> <br>
+        <textarea id="subject" name="subject" placeholder="  Leave a Comment here..." style="height:95px"></textarea><br>
+
+        <input type="submit" value="Submit">
+      </form>
+      </div>
+    </body>
+    </html>
