@@ -285,7 +285,7 @@ to {
 
 .header {
   color: white;
-  background: content-box radial-gradient(rgb(31, 30, 30), skyblue);
+  background: content-box radial-gradient(rgba(31, 30, 30), skyblue, 155, 0.5);
 }
 
 h1 {
@@ -312,8 +312,6 @@ h1 {
 to {
   margin-left: 0%;
   width: 100%;
-}
-
 }
 
 .logo {
@@ -345,8 +343,8 @@ body {
 .img {
   float: right;
   width: 245px;
-  border-radius: 35px;
-  border: 5px ridge deepskyblue;
+  border-radius: 40px;
+  border: 20px ridge deepskyblue;
   margin-top: 25px;
 }
 
@@ -364,7 +362,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 5px;
-  background-color: #db2964;
+  background-color: rgba(0, 0, 255, 0.3);
   color: #fff;
 }
 
@@ -484,14 +482,23 @@ table.center {
 }
 
 .center {
-  text-align: center;
+  position: absolute;
+  left: 500px;
+  bottom: 377px;
+  float: center;
+  width: 255px;
+  background-color: rgba(0, 0, 0, .5);
+  border: 3px ridge gray;
+  border-radius: 35px;
+  padding: 30px;
   font-size: 25px;
-  background-color: cornflowerblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif background-color: cornflowerblue;
 }
 
 #gif {
   width: 200px;
-  border: 0;
+  border: 10px double cyan;
+  border-radius: 20px;
 }
 
 .button {
@@ -549,6 +556,9 @@ h2 {
 }
 
 .team-image {
+  color: white;
+  border: 10px ridge rgba(255, 255, 255, 0);
+  border-radius: 35px;
   width: 100%;
   display: block;
 }
@@ -619,32 +629,47 @@ user agent stylesheet input, textarea, select, button, meter, progress {
 }
 
 .tokko {
-  border: 3px ridge purple;
+  width: 750px;
+  padding: 25px;
+  border: 2px dashed purple;
   border-radius: 35px;
   margin-right: 251px;
   color: whitesmoke;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .lama {
-  border: 3px ridge purple;
+  width: 750px;
+  padding: 25px;
+  border: 2px dashed purple;
   border-radius: 35px;
   margin-right: 140px;
   color: whitesmoke;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .sadi {
-  border: 3px ridge purple;
+  width: 750px;
+  padding: 25px;
+  border: 2px dashed purple;
   border-radius: 35px;
   margin-right: 120px;
   color: whitesmoke;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .p-container {
   border-radius: 53px;
   margin-right: 256px;
+  margin-left: 60px;
   padding: 30px;
-  background-color: rgba(238, 130, 238, 0.5);
+  background-color: rgba(214, 22, 189, 0.4);
+}
+
+.ethio {
+  width: 700px;
+  height: 650px;
+  float: right;
+  border: 10px double rgba(255, 255, 255, 0);
+  border-radius: 20px;
 }
