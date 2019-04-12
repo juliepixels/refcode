@@ -673,3 +673,27 @@ user agent stylesheet input, textarea, select, button, meter, progress {
   border: 10px double rgba(255, 255, 255, 0);
   border-radius: 20px;
 }
+
+iframe {
+  width: 45%;
+}
+
+iframe, img {
+  height: 400px;
+  margin: 1%;
+  width: 45%;
+}
+
+iframe[Attributes Style] {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+
+user agent stylesheet iframe {
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
