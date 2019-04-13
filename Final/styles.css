@@ -1,5 +1,218 @@
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@-moz-keyframes animateBubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@keyframes animateBubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@-webkit-keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@-moz-keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+  -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: -5%;
+  top: 5%;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.x2 {
+  -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 5%;
+  top: 80%;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.x3 {
+  -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 10%;
+  top: 40%;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.x4 {
+  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 20%;
+  top: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.x5 {
+  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 30%;
+  top: 50%;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.x6 {
+  -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 50%;
+  top: 0;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.x7 {
+  -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 65%;
+  top: 70%;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.x8 {
+  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 80%;
+  top: 10%;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.x9 {
+  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 90%;
+  top: 50%;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.x10 {
+  -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 80%;
+  top: 80%;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+/* OBJECTS */
+* {
+  box-sizing: border-box;
+}
+
+.bubble {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+
+.bubble:after {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+  content: "";
+  height: 180px;
+  left: 10px;
+  position: absolute;
+  width: 180px;
+}
+
 p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
   font-size: 20px;
   color: white;
 }
@@ -7,7 +220,7 @@ p {
 #mySidenav a,
 .nav-title { /* NOTES: By adding a , and the selector .nav-title to this rule means they will share styles, and appear like the other <a> tags in the menu. */
   position: absolute;
-  left: -120px;
+  left: -90px;
   transition: 0.3s;
   padding: 15px;
   width: 150px;
@@ -59,6 +272,11 @@ p {
   background-color: rgb(77, 221, 58);
 }
 
+h2 {
+  animation-duration: 6s;
+  animation-name: slidein;
+}
+
 .header {
   background: content-box radial-gradient(rgb(31, 30, 30), skyblue);
   display:flex;
@@ -67,11 +285,9 @@ p {
 
 h1 { /* NOTES: There were two rules applied to the h1 selector. I combined them and removed the extra animation rule for the slidein keyframe. Once a keyframe animation rule is created, you can use it multipule times in the same style sheet. That way you have less code to maintain. */
   font-size: 40px;
-  text-align: center;
-  color: blue;
   background: content-box radial-gradient(rgb(31, 30, 30 .4), skyblue);
   animation-duration: 3s;
-  animation-name: slidein; /* NOTES: This will use the keyframe rule on line 82 */
+  animation-name: slidein; /* NOTES: This will use the keyframe rule on line 292 */
   padding-left: 40px;
 }
 
@@ -88,7 +304,7 @@ h1 { /* NOTES: There were two rules applied to the h1 selector. I combined them 
 
 h2 {
   animation-duration: 6s;
-  animation-name: slidein; /* NOTES: This will use the keyframe rule on line 82 */
+  animation-name: slidein; /* NOTES: This will use the keyframe rule on line 292 */
 }
 
 .logo {
@@ -97,10 +313,11 @@ h2 {
 }
 
 body {
-  background: url("./img/cover15.png") no-repeat center center fixed;
+  margin: 0;
+  background: url("./img/sky1.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #333;
-  font: 100% Lato, Arial, Sans Serif;
+  font: 100% Lato, Arial, Sans-Serif;
   height: 100vh;
   margin: 0 0 0 100px; /* NOTES: I've added a margin to left of the whole page to allow for the width of the navigation. This makes is easier to position all the other elements on the page. */
   padding: 0;
@@ -117,23 +334,13 @@ body {
 }
 
 .img {
-  float: right;
-  width: 150px;
-  border-radius: 25px;
-  border: 2px solid gray;
+  width: 250px;
+  border-radius: 40px;
+  border: 20px ridge deepskyblue;
+  margin-top: 25px;
 }
 
 .one {
-  color: whitesmoke;
-  font-size: 10px;
-}
-
-.two {
-  color: whitesmoke;
-  font-size: 10px;
-}
-
-.three {
   color: whitesmoke;
   font-size: 10px;
 }
@@ -144,10 +351,9 @@ body {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 5px;
-  background-color: #db2964;
+  background-color: rgba(0, 0, 255, 0.3);
   color: #fff;
 }
 
@@ -163,62 +369,8 @@ footer {
   animation-name: slidein; /* NOTES: This will use the keyframe rule on line 82 */
 }
 
-.speech-bubble {
-  position: relative;
-  width: 238px;
-  padding: 60px 71px;
-  margin: -1em auto 5px;
-  text-align: center;
-  color: #fff;
-  background: #075698;
-  /* css3 */
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#2e88c4), to(#075698));
-  background: -moz-linear-gradient(#2e88c4, #075698);
-  background: -o-linear-gradient(#2e88c4, #075698);
-  background: linear-gradient(#2e88c4, #075698);
-  border-radius: 220px / 120px; /* Note: The -webkit- prefex isn't needed for border-radius anymore. Other CSS properties do still need it though. You can find out which ones still need prefixes at caniuse.com */
-}
-
-.speech-bubble p {
-  font-size: 15px;
-}
-
-/* creates the larger circle */
-.speech-bubble:before {
-  content: "";
-  position: absolute;
-  bottom: 22px;
-  left: -35px;
-  width: 44px;
-  height: 47px;
-  background: #075698;
-  /* css3 */
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
-
-/* creates the smaller circle */
-.speech-bubble:after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: -65px;
-  width: 31px;
-  height: 31px;
-  background: #075698;
-  /* css3 */
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-}
-
-.bubble-container {
-  display: flex;
-  align-items: flex-end;
-}
-
 .text-container {
+  border-radius: 53px;
   margin: 10%;
   padding: 30px;
   color: whitesmoke;
@@ -280,24 +432,38 @@ table.center {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: rgba(240, 137, 137, 0.8);
   color: white;
 }
 
-.center {
-  text-align: center;
+.resume-container {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-link {
+  /* NOTES: Instead of absolute positioning to center this content, let's use grid or flex box. */
+  display: block;
+  width: auto;
+  background-color: rgba(0, 0, 0, .5);
+  border: 3px ridge gray;
+  border-radius: 35px;
+  padding: 30px;
   font-size: 25px;
-  background-color: cornflowerblue;
+  color: whitesmoke;
+  font-family: cursive;
 }
 
 #gif {
-  float: left;
   width: 200px;
-  border: 0;
+  border: 10px double cyan;
+  border-radius: 20px;
 }
 
 .button {
-  background-color: slateblue;
+  color: white;
   font-size: 30px;
 }
 
@@ -307,7 +473,7 @@ table.center {
 }
 
 h2 {
-  color: orangered;
+  color: black;
   font-size: 40px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -354,4 +520,146 @@ label {
 
 fieldset { /* NOTES: Added this to remove the borders on all fieldsets. */
   border: none;
+}
+
+.team-container {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.team-image {
+  color: white;
+  border: 10px ridge rgba(255, 255, 255, 0);
+  border-radius: 35px;
+  width: 100%;
+  display: block;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+user agent stylesheet div {
+  display: block;
+}
+
+body {
+  font-family: Times New Roman;
+  margin-block-end: 1em;
+  display: block;
+  margin-top: 0em;
+}
+
+input[type=text], select, textarea, input[type=tel] {
+  width: 35%;
+  padding: 9px;
+  border: 1px solid pink;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  box-shadow: 5px 8px palevioletred;
+}
+
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+}
+
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  - text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+user agent stylesheet input, textarea, select, button, meter, progress {
+  -webkit-writing-mode: horizontal-tb !important;
+}
+
+.harar {
+  display: flex;
+  float: right;
+  border-radius: 25px;
+}
+
+.tokko {
+  width: 750px;
+  padding: 25px;
+  border: 2px dashed purple;
+  border-radius: 35px;
+  margin-right: 251px;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.lama {
+  width: 750px;
+  padding: 25px;
+  border: 2px dashed purple;
+  border-radius: 35px;
+  margin-right: 140px;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.sadi {
+  width: 750px;
+  padding: 25px;
+  border: 2px dashed purple;
+  border-radius: 35px;
+  margin-right: 120px;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.p-container {
+  border-radius: 53px;
+  margin-right: 30px;
+  padding: 30px;
+  background-color: rgba(214, 22, 189, 0.4);
+  flex: 1;
+}
+
+.ethio {
+  max-width: 700px;
+  width:100%;
+  border-radius: 20px;
+}
+
+iframe {
+  height: 400px;
+  margin: 1%;
+  width: 45%;
+}
+
+iframe[Attributes Style] {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+
+user agent stylesheet iframe {
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
 }

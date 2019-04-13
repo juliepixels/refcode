@@ -5,85 +5,103 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-</head><!-- NOTES: In each html document there can be only one <head> and one <body> tag. Just like for people :) -->
+</head>
 
 <body>
   <!-- NOTES: I added space between each main <div> just to make it easier to read. I also add indentions to the code to make it easier to read the html. -->
-
   <div id="mySidenav" class="sidenav">
     <div class="nav-title">Menu</div>
     <a href="./index.html" id="Home">Home*</a>
     <a href="./mystory.html" id="mystory">My Story</a>
-    <a href="./About.html" id="about">About</a>
+    <a href="./Harar.html" id="about">About</a>
     <a href="./Resume.html" id="resume">Resume</a>
     <a href="./teams.html" id="links">Links</a>
-    <a href="./Contact.html" id="contact">Contact</a>
   </div>
 
-  <header class="header"><!-- NOTES: I used the <header> tag instead of <div>. Either way works well. Just letting you know this tag is available to use. -->
-    <h1>Thank you for visting my WEBSITE.</h1><!-- NOTES: Using images instead of text isn't preferred. It's better to use CSS to style text instead. You can add <span> tags and classes to special text to make is standout.  -->
-    <img src="img/thx.gif" class="thx" alt="thank you animation"><!-- NOTES: Instead of floating the image, I added the property display:flex; to the parent tag. Either works okay, but flex has more benefits in this case. If you want to update the class 'header' on the style sheet, that may be even better. -->
-  </header>
+  <div class="header">
+    <h1>
+      <img src="./img/thx.gif" alt="thank you animation" id="gif">
+      for checking me out :)
+    </h1>
+  </div>
 
-  <div>
-    <h2> I can be contacted via</h2><!-- NOTES: I moved the heading for this form into the same <div> container. Not required, but it's good to keep related items close together. -->
-    <form action="https://formspree.io/address@email.tld" method="POST" id="contact">
-      <fieldset class="element">
-        <legend id="contact" color="orange"><strong>Personal information</strong>:</legend><!-- NOTES: <strong> is preferred over <b>. They do the same thing but one is more symantic. -->
+  <h2>I can be contacted via</h2>
 
+  <div class="flex">
+    <div class="container">
+      <form method="POST" action="https://formspree.io/nedu.amin@gmail.com" style="min-width: 600px;">
         <fieldset><!-- NOTES: Using the <fieldset> tag as a seperator instead of <br> is a good idea and gives you more styling control. -->
-          <Label for="firstname">First name:</label><!-- NOTES: I've added the <label> tag to the form labels. This is preferred and give you more style control. I've also added the property 'for' to match the label to the coorsponding form field. -->
-          <input type="text" name="firstname" placeholder="First name">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.">
         </fieldset>
 
         <fieldset>
-          <label for="lastname">Last name:</label>
-          <input type="text" name="lastname" placeholder="Last name">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.">
         </fieldset>
 
         <fieldset>
-          <label for="replyto">Email:</label>
-          <input type="text" id="Email" name="replyto" placeholder="email adress">
+          <label for="Email">Email</label>
+          <input type="text" id="Email" name="_replyto" placeholder="Your email adress.">
         </fieldset>
 
         <fieldset>
-          <label for="Phone">Phone Number:</label>
-          <input type="text" id="Phone" name="Phone" placeholder="(optional)">
+          <label for="PN">Phone Number (optional)</label>
+
+          <select id="PN" name="PN">
+            <option value="home phone">Home</option>
+            <option value="cell phone">Cell</option>
+          </select>
+
+          <input type="tel" id="PN" name="Phone Number" placeholder="Your number.">
         </fieldset>
 
         <fieldset>
-          <textarea id="subject" name="subject" placeholder="Write your message"></textarea>
+          <label for="country">Country</label>
+
+          <select id="country" name="country">
+            <option value="africa">Africa</option>
+            <option value="australia">Australia</option>
+            <option value="asia">Asia</option>
+            <option value="canada">Canada</option>
+            <option value="europe">Europe</option>
+            <option value="usa">USA</option>
+          </select>
         </fieldset>
 
-        <input type="submit" value="Submit" style="background-color:lightseagreen; width:130px;">
-      </fieldset>
-    </form>
-  </div>
+        <fieldset>
+          <label for="subject">Comment</label>
+          <textarea id="subject" name="subject" placeholder="Leave a Comment here." rows="5"></textarea><!-- NOTES: The tag <textarea> has a property "row" that lets you set the number of text rows shown. No need for adding height. -->
+        </fieldset>
 
-  <div>
-    <a href="mailto:nedu.amin@gmail.com" target="_blank"><!-- NOTES: Spaces in the href property can cause errors. -->
-      <img src="img/gmail1.png" alt="gmail" style="width:100px;border:0;">
-    </a><!-- NOTES: When you have multipule objects with the same style properties, like these linked images, it's a good idea to create a class in your style sheet and apply the class to the opjects. -->
+        <input type="submit" value="Submit" style="color: purple; font-size: 20px;">
+      </form>
+      </div>
+      <div>
+        <img src="./img/harar.jpg" alt="pictures of Ethiopian women" class="ethio">
+      </div>
+    </div>
 
-    <a href="https://github.com/UmmuAyyub" target="_blank">
-      <img src="img/git1.png" alt="github" style="width:100px;border:0;">
-    </a>
-
-    <a href="https://www.linkedin.com/in/nezira-usmael-6358b3182" target="_blank"><img src="img/link1.png" alt="linkedin" style="width:100px;border:0;"></a>
-  </div>
+  <a href="mailto:nedu.amin@gmail.com" target="_blank"><!-- NOTES: Spaces in the href property can cause errors. -->
+    <img src="./img/gmail1.png" alt="gmail" style="width:100px;border:0;"><!-- NOTES: When you have multipule objects with the same style properties, like these linked images, it's a good idea to create a class in your style sheet and apply the class to the opjects. -->
+  </a>
+  <a href="https://github.com/UmmuAyyub" target="_blank">
+    <img src="./img/git1.png" alt="github" style="width:100px;border:0;">
+  </a>
+  <a href="https://www.linkedin.com/in/nezira-usmael-6358b3182" target="_blank">
+    <img src="./img/link1.png" alt="linkedin" style="width:100px;border:0;">
+  </a>
 
   <div class="button">
     <p>Did you like my website?</p>
-
     <button id="Yes" type="button" name="button" onclick="alert('You are Awesome! add me to your favorites.')"> Yes</button>
-
     <button id="No" name="button" onclick="alert('but why?! :(')"> No</button>
   </div>
 
   <button class="favorite styled" type="button">Add to favorites</button>
 
   <footer>
-    ©2019 Nezira Usmael
+    ©2019_Nezira Usmael
   </footer>
 </body>
 </html>
