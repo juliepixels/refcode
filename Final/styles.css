@@ -403,6 +403,7 @@ to {
 }
 
 .text-container {
+  width: 900px;
   border-radius: 53px;
   margin: 10%;
   padding: 30px;
@@ -482,17 +483,33 @@ table.center {
 }
 
 .center {
-  position: absolute;
-  left: 500px;
-  bottom: 377px;
-  float: center;
-  width: 255px;
-  background-color: rgba(0, 0, 0, .5);
-  border: 3px ridge gray;
-  border-radius: 35px;
-  padding: 30px;
-  font-size: 25px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif background-color: cornflowerblue;
+  display: flex;
+  width: 180px;
+  border: 0;
+  line-height: 3.5;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.submit {
+  border: 0;
+  line-height: 1.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(220, 0, 154);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 #gif {
@@ -564,6 +581,7 @@ h2 {
 }
 
 .container {
+  display: relative;
   border-radius: 5px;
   padding: 10px;
   margin-left: 100px;
@@ -623,9 +641,17 @@ user agent stylesheet input, textarea, select, button, meter, progress {
 }
 
 .harar {
-  display: flex;
+  border: 3px ridge gray;
+  border-radius: 35px;
+  width: 600px;
+  height: 400px;
+}
+
+.luv {
   float: right;
-  border-radius: 25px;
+  border: 3px ridge gray;
+  border-radius: 35px;
+  width: 250px;
 }
 
 .tokko {
@@ -674,26 +700,8 @@ user agent stylesheet input, textarea, select, button, meter, progress {
   border-radius: 20px;
 }
 
-iframe {
-  width: 45%;
-}
-
-iframe, img {
-  height: 400px;
-  margin: 1%;
-  width: 45%;
-}
-
-iframe[Attributes Style] {
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-}
-
-user agent stylesheet iframe {
-  border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-  border-image: initial;
+.question {
+  width: 100px;
+  border: 3px ridge blue;
+  border-radius: 20px;
 }
