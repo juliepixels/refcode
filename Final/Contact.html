@@ -9,6 +9,7 @@
 
 <body>
   <!-- NOTES: I added space between each main <div> just to make it easier to read. I also add indentions to the code to make it easier to read the html. -->
+  
   <div id="mySidenav" class="sidenav">
     <div class="nav-title">Menu</div>
     <a href="./index.html" id="Home">Home*</a>
@@ -17,15 +18,15 @@
     <a href="./Resume.html" id="resume">Resume</a>
     <a href="./teams.html" id="links">Links</a>
   </div>
-
+  
   <div class="header">
     <h1>
       <img src="./img/thx.gif" alt="thank you animation" id="gif">
       for checking me out :)
     </h1>
   </div>
-
-  <h2>I can be contacted via</h2>
+ 
+<h2>I can be contacted via</h2>
 
   <div class="flex">
     <div class="container">
@@ -44,8 +45,8 @@
           <label for="Email">Email</label>
           <input type="text" id="Email" name="_replyto" placeholder="Your email adress.">
         </fieldset>
-
-        <fieldset>
+        
+         <fieldset>
           <label for="PN">Phone Number (optional)</label>
 
           <select id="PN" name="PN">
@@ -54,44 +55,50 @@
           </select>
 
           <input type="tel" id="PN" name="Phone Number" placeholder="Your number.">
-        </fieldset>
-
-        <fieldset>
+         </fieldset>
+        
+         <fieldset>
           <label for="country">Country</label>
 
           <select id="country" name="country">
             <option value="africa">Africa</option>
-            <option value="australia">Australia</option>
-            <option value="asia">Asia</option>
-            <option value="canada">Canada</option>
-            <option value="europe">Europe</option>
-            <option value="usa">USA</option>
-          </select>
+              <option value="australia">Australia</option>
+              <option value="asia">Asia</option>
+              <option value="canada">Canada</option>
+              <option value="German">German</option>
+              <option value="italy">Italy</option>
+              <option value="iran">Iran</option>
+              <option value="saudi">Kingdomof Saudi Arabia</option>
+              <option value="unitedemirate">United Emirate</option>
+              <option value="usa">USA</option>
+          </select>  
         </fieldset>
-
+        
         <fieldset>
           <label for="subject">Comment</label>
           <textarea id="subject" name="subject" placeholder="Leave a Comment here." rows="5"></textarea><!-- NOTES: The tag <textarea> has a property "row" that lets you set the number of text rows shown. No need for adding height. -->
         </fieldset>
-
+        
         <input type="submit" value="Submit" style="color: purple; font-size: 20px;">
-      </form>
-      </div>
-      <div>
-        <img src="./img/harar.jpg" alt="pictures of Ethiopian women" class="ethio">
-      </div>
+       </form>
     </div>
-
-  <a href="mailto:nedu.amin@gmail.com" target="_blank"><!-- NOTES: Spaces in the href property can cause errors. -->
-    <img src="./img/gmail1.png" alt="gmail" style="width:100px;border:0;"><!-- NOTES: When you have multipule objects with the same style properties, like these linked images, it's a good idea to create a class in your style sheet and apply the class to the opjects. -->
-  </a>
-  <a href="https://github.com/UmmuAyyub" target="_blank">
-    <img src="./img/git1.png" alt="github" style="width:100px;border:0;">
-  </a>
-  <a href="https://www.linkedin.com/in/nezira-usmael-6358b3182" target="_blank">
-    <img src="./img/link1.png" alt="linkedin" style="width:100px;border:0;">
-  </a>
-
+    <div>
+      <img src="./img/harar.jpg" alt="pictures of Ethiopian women" class="ethio">
+    </div>
+  </div>
+      
+  <div>
+    <a href=" mailto: nedu.amin@gmail.com" target="_blank">
+      <img src="./img/gmail1.png" alt="gmail" style="width:45px;border: 2px double rgba(255, 255, 255, 0); border-radius: 10px;">
+    </a>  
+    <a href="https://github.com/UmmuAyyub" target="_blank">
+      <img src="./img/git1.png" alt="github" style="width:45px;border: 2px double rgba(255, 255, 255, 0); border-radius: 10px;">
+    </a>
+    <a href="https://www.linkedin.com/in/nezira-usmael-6358b3182" target="_blank">
+      <img src="./img/link1.png" alt="linkedin" style="width:45px;border: 2px double rgba(255, 255, 255, 0); border-radius: 10px;">
+    </a>      
+  </div>
+  
   <div class="button">
     <p>Did you like my website?</p>
     <button id="Yes" type="button" name="button" onclick="alert('You are Awesome! add me to your favorites.')"> Yes</button>

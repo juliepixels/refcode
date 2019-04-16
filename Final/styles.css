@@ -370,6 +370,7 @@ footer {
 }
 
 .text-container {
+  width: 900px;
   border-radius: 53px;
   margin: 10%;
   padding: 30px;
@@ -456,6 +457,36 @@ table.center {
   font-family: cursive;
 }
 
+.center {
+  display: flex;
+  width: 180px;
+  border: 0;
+  line-height: 3.5;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.submit {
+  border: 0;
+  line-height: 1.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(220, 0, 154);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
 #gif {
   width: 200px;
   border: 10px double cyan;
@@ -540,6 +571,7 @@ fieldset { /* NOTES: Added this to remove the borders on all fieldsets. */
 }
 
 .container {
+  display: relative;
   border-radius: 5px;
   padding: 10px;
   margin-left: 100px;
@@ -595,9 +627,17 @@ user agent stylesheet input, textarea, select, button, meter, progress {
 }
 
 .harar {
-  display: flex;
+  border: 3px ridge gray;
+  border-radius: 35px;
+  width: 600px;
+  height: 400px;
+}
+
+.luv {
   float: right;
-  border-radius: 25px;
+  border: 3px ridge gray;
+  border-radius: 35px;
+  width: 250px;
 }
 
 .tokko {
@@ -644,22 +684,8 @@ user agent stylesheet input, textarea, select, button, meter, progress {
   border-radius: 20px;
 }
 
-iframe {
-  height: 400px;
-  margin: 1%;
-  width: 45%;
-}
-
-iframe[Attributes Style] {
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-}
-
-user agent stylesheet iframe {
-  border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-  border-image: initial;
+.question {
+  width: 100px;
+  border: 3px ridge blue;
+  border-radius: 20px;
 }
